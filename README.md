@@ -7,16 +7,14 @@ npm install ajax-as-promised
 
 Raw, bleeding edge, just committed and published as a node module to make sure I get the cool npm module name. :D
 
-
-
 Proposed Api
 ============
 
 ```
- var response = request(url)
-                         .then(function successHandler(res) {
-                           }, function onerror(err) {
-                        });
+ var response = request(url, options) //options hash has the same signature and defaults as JQuery's $.ajax.
+                 .then(function successHandler(res) {
+                    }, function onerror(err) {
+                });
 ```
 
 
