@@ -11,17 +11,18 @@ Proposed Api
 ============
 
 ```
- var response = request(url, options) //options hash has the same signature and defaults as JQuery's $.ajax.
+ var response = request(url, type, options) 
                  .then(function successHandler(res) {
                     }, function onerror(err) {
                 });
+//'type' can be one of the HTTP verbs. Options hash has the same signature and defaults as JQuery's $.ajax.
 ```
 
 
 To enable easy chaining of promises 
 
 ```
-  request(url)
+  request(url, 'GET')
     .then(function() {
     })
     .then(function() {
