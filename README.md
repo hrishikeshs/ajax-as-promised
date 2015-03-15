@@ -5,24 +5,35 @@ Promise wrapper for ajax for a bit of syntactic sugar sweetness.
 npm install ajax-as-promised
 ```
 
-Raw, bleeding edge, just committed and published as a node module to make sure I get the cool npm module name. :D
+Raw, bleeding edge.
 
 Proposed Api
 ============
 
 ```
- var response = request(url, type, options) 
+ var response = ajax.GET(url, options)
                  .then(function successHandler(res) {
                     }, function onerror(err) {
                 });
-//'type' can be one of the HTTP verbs. Options hash has the same signature and defaults as JQuery's $.ajax.
+
+ ajax.PUT(url,...)
+     .then(function() { });
+
+
+ ajax.POST(url, ..)
+     .then(function() {});
+
+
+ ajax.DELETE(url, ...)
+     .then(function() { });
+     
 ```
 
 
 To enable easy chaining of promises 
 
 ```
-  request(url, 'GET')
+  request.get(url)
     .then(function() {
     })
     .then(function() {
