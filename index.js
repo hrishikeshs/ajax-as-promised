@@ -1,5 +1,5 @@
 var Promise = require("bluebird");
-var GET = require("./get");
+var GET = require("./lib/get");
 
 module.exports = {
   get: GET
