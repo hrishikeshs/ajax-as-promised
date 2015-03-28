@@ -10,7 +10,10 @@
       "bluebird": "~2.9"
   },
   "devDependencies": {
-    "babel": "~4.7" 
+      "babel": "~4.7",
+      "xhr2": "0.1.2",
+      "chai-as-promised": "4.3.0",
+      "mocha": "*"
   },
   "repository": {
     "type": "git",
