@@ -52,5 +52,6 @@ Pull requests welcome!
 
 License
 ========
+Copyright © 2015 Hrishikesh S
 
-[MIT](http://opensource.org/licenses/MIT)
+licensed under the <a href="http://www.opensource.org/licenses/MIT">MIT License</a>.
